@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   },
 
   description: siteData.seoDescription,
+  alternates: { canonical: "/" },
 
   openGraph: {
     title: siteData.seoTitle,
