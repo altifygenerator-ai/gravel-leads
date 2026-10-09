@@ -29,6 +29,8 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: `${area.title} | Fast Local Gravel Quotes`,
     description: `Need gravel delivered in ${area.name}? Get a quick quote for driveway gravel, rock delivery, drainage rock, pads, and parking areas.`,
+    alternates: { canonical: `/service-area/${area.slug}` },
+    openGraph: { url: `/service-area/${area.slug}`, title: `${area.title} | Fast Local Gravel Quotes` },
   };
 }
 
